@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="./js/this.js"></script>
+    <script src="https://kit.fontawesome.com/7f99a72c13.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata||family=Kanit:wght@600||family=Nerko+One&display=swap"
+        rel="stylesheet">
+<body>
+
+    <section class="section1">
+       
+        <hr> <br>
+        <h1 id="title">Future Software/Application Developer</h1> <br>
+        <img src="./Images/me.jpg" alt="me" id="me"> <br><br>
+        <h2 id="name">Thy Nguyen</h2>
+        <div class="a-button click">
+            <button id="download"> <i class="fa-solid fa-download"></i>My Resume</button> &nbsp;
+            <button id="contact"> <i class="fa-solid fa-address-book"></i>Contact</button>
+        </div>
+        <br>
+    </section>
+
+    <section class="section2">
+
+        <h2 id="education">
+          <i class="fa-solid fa-user-graduate"></i> 
+          Education 
+          <i class="fa-solid fa-user-graduate"></i>
+        </h2>
+        <hr> 
+        <div class="wrapper">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__img"></div>
+                <img src="./Images/seneca.jfif" alt="seneca">
+                <cite>Seneca College</cite> 
+              </div>
+              <div class="card__side card__side--back">
+                <div class="cta">
+                  <h3>Computer Programming and Analysis (AdvDip)</h3>
+                  <div class="cta__text">
+                    <p>Seneca College <br>
+                        2022- Present</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__img"></div>
+                <img src="./Images/Centennial.jpg" alt="centen">
+                    <cite>Centennial College</cite> 
+              </div>
+              <div class="card__side card__side--back">
+                <div class="cta">
+                  <h3>Electrical Engineering (Dip)</h3>
+                  <div class="cta__text">
+                    <p>Centennial College <br>
+                        2017 - 2018</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__img"></div>
+                <img src="./Images/UoG.jpg" alt="uog">
+                    <cite>University of Gloucestershire</cite> 
+              </div>
+              <div class="card__side card__side--back">
+                <div class="cta">
+                  <h3>Business Administration (BaCh)</h3>
+                  <div class="cta__text">
+                    <p>Gloucestershire University <br> 
+                        2005 - 2009</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="section3">
+        <br>
+        <h2 id = "skills"> 
+          <i class="fa-solid fa-book"></i> 
+          Skills 
+          <i class="fa-solid fa-book"></i></h2>
+        <hr>
+        <br>
+        <div class="cards2">
+            <article class="cardskill">
+              
+                  <header>
+                    <i id = "lang" class="fa-solid fa-language"></i>
+                    <h2 id = "know">Experienced in </h2>
+                  </header>
+                <div class="content">
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>autoCAD</li>
+                        <li>logicRX500</li>
+                    </ul>
+            </article>
+                    
+             <article class="cardskill">
+                <header>
+                    <i id = "lang" class="fa-regular fa-square-plus"></i>
+                    <h2>Current Learning</h2>
+                </header>    
+                <div class="content">
+                    <ul>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                        
+                      </ul>
+                </div>
+            </article>
+                    
+            <article class="cardskill">
+                <header>
+                    <i id = "lang" class="fa-brands fa-leanpub"></i>
+                    <h2>Expected language learnt in the future</h2>
+                </header>
+                <div class="content">
+                    <ul>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                      </ul>
+                </div>
+            </article>
+        </div>
+
+        <br>
+    </section>
+
+    <section class="section4">
+        <h2 id="id1">
+          <i class="fa-solid fa-user-large"></i>
+           Contact Me 
+           <i class="fa-solid fa-user-large"></i></h2>
+        <hr>
+        <br>
+        <form id = "format"action="https://httpbin.org/post" method = "post" onsubmit="return validateInput();" name = "form">
+            <fieldset>
+                <legend>Contact Information</legend> <br>
+                <div class="block_container">
+                  <div class="block_left">
+                    <div>
+                      <label for="nam">Name: </label>
+                      <input type="text" id="nam" name = "First Name"> &nbsp;
+                    </div>
+                    <div>
+                      <label for="cit" id = "cities">City: </label> 
+                      <input type="text" id = "cit" name = "City">
+                    </div>
+                    <div>
+                      <label for="phone">Phone Number: </label> 
+                      <input type="text" id = "phone" name = "Phone Number"> 
+                    </div>
+                  </div>
+                  <div class="block_right">
+                    <div>
+                      <label for="e">Email: </label>
+                      <input type="text" id = "e" name = "Email"> <br><br>
+                    </div>
+                    
+                    <div>
+                      <label for="post" id = "po">Postal Code: </label>
+                      <input type="text" id = "post" name = "Postal Code"> <br><br>&nbsp;
+                    </div>
+                    <div>
+                      <label for="choose">Province/Territories:</label>
+                      <input type="text" id = "choose" list="pt" name="Province/Territories" />   
+                    </div>
+                  </div>
+                </div>
+                <datalist id="pt">	  	  
+                    <option value="Prince Edward Island">
+                    <option value="Nova Scotia">	  
+                    <option value="New Brunswick">	  
+                    <option value="Newfoundland and Labrador">  
+                    <option value = "Quebec">
+                    <option value = "Ontario">
+                    <option value = "Manitoba">
+                    <option value = "Saskatchewan">
+                    <option value = "Alberta">
+                    <option value = "British Columbia">
+                    <option value = "Yukon">
+                    <option value = "Northwest Territories">
+                    <option value = "Nunavut">
+                </datalist>
+            
+                <br><br>
+                <div id = "box">
+                    What this is About: 
+                    <input type="radio" name="about" value="Job Offer" id = "j"> Job Offer
+                    <input type="radio" name="about" value="School" id = "s"> School
+                    <input type="radio" name="about" value="Other" id = "o"> Other
+                    <br>
+                    <br>
+
+                    <textarea name="post" id="hid" cols="30" rows="10" hidden></textarea>
+                </div>
+
+                <p> Comment:</p>
+                <div> 
+                    <textarea id = "comment_box" name="comments" cols="30" rows="5"></textarea>
+                </div>
+                
+            </fieldset>
+            <br>
+
+            <div class = "but">
+                <input id = "sub" type="submit" value = "Submit">
+                <input id = "c" type = "reset" value = "Clear">
+            </div>
+        </form>
+
+        <br>
+    </section>
+
+    <section class="section5">
+
+        <div class="title">
+            <h2> <i class="fa-solid fa-clipboard-user"></i> About Me & Academic Honestly <i class="fa-solid fa-clipboard-user"></i></h2>
+            <h3>Basic information</h3>
+        </div>
+
+        <hr>
+        <br>
+        <div class=info>
+          
+            <p> <i>Honesty Statement: </i> <br>
+                I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No
+                part of this assessment has been copied manually  or electronically from any other source <br>(including web
+                sites) except for the information supplied by the WEB222 instructors and/or made available in this assessment
+                for <br> my use. I also declare that no part of this assignment has been distributed to other students. <br>
+                <br>
+
+                <i>Date:</i> December 6, 2022
+
+            </p>
+
+            <p id="names"> <i>Name:</i> Thy Nguyen <br> <br>
+                <i>Student ID:</i> 105310221 <br> <br>
+                <i>Class Section:</i> NHH <br> <br>
+                <i>Instructor:</i> Harry Scanlan
+            </p>
+        </div>
+
+        <br> 
+    </section>
+</body>
+
+</html>
